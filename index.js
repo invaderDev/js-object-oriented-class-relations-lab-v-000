@@ -39,6 +39,13 @@ class Passenger {
       return trip.passengerId === this.id;
     })
   }
+
+  drivers() {
+    return this.trips().filter(trip => {
+      return trip.driver();
+    })
+  }
+  
 }
 
 let tripId = 0;

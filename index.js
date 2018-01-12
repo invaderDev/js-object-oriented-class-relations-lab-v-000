@@ -16,6 +16,8 @@ class Driver {
     })
   }
 
+//FIX ME!!!!!!!!!!!!
+
   passengers() {
     return this.trips().filter(trip => {
       return trip.passenger();
@@ -39,6 +41,8 @@ class Passenger {
       return trip.passengerId === this.id;
     })
   }
+
+  //FIX ME TOO!!!!!!!!!!!
 
   drivers() {
     return this.trips().filter(trip => {

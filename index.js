@@ -22,7 +22,7 @@ class Driver {
 
   passengers() {
     return this.trips().filter(trip => {
-      return trip.passenger;
+      return trip.passenger();
     })
   }
 }

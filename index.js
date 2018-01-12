@@ -21,8 +21,7 @@ class Driver {
   //that results from calling trips() on this driver.
 
   passengers() {
-    const array = this.trips();
-    return array.filter(trip => {
+    return this.trips().filter(trip => {
       return trip.passenger;
     })
   }

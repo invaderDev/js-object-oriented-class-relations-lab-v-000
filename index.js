@@ -17,13 +17,9 @@ class Driver {
   }
 
   passengers() {
-    let pass = [];
-    for (trip of this.trips()){
-      pass.push(trip.passenger())
-    }
-    return pass;
+
   }
-  
+
 }
 
 let passengerId = 0;

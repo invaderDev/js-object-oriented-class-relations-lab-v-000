@@ -16,14 +16,11 @@ class Driver {
     })
   }
 
-//FIX ME!!!!!!!!!!!!
-
   passengers() {
     return this.trips().map(trip => {
       return trip.passenger();
     })
   }
-
 }
 
 let passengerId = 0;

@@ -19,15 +19,9 @@ class Driver {
 //FIX ME!!!!!!!!!!!!
 
   passengers() {
-    let pass = [];
-    let trps = this.trips();
-
-    for (trip of trps){
-      pass.push(trip.passenger());
-    }
-
-    return pass;
-    
+    this.trips().map(trip => {
+      trip.passenger();
+    })
   }
 
 }

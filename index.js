@@ -41,12 +41,12 @@ class Passenger {
 
   //FIX ME TOO!!!!!!!!!!!
 
-  drivers() {
-    return this.trips().filter(trip => {
-      return trip.driver();
+  drivers(){
+    return this.trips().map(trip => {
+      return trip.passenger();
     })
   }
-
+  
 }
 
 let tripId = 0;

@@ -19,9 +19,15 @@ class Driver {
 //FIX ME!!!!!!!!!!!!
 
   passengers() {
-    return this.trips().filter(trip => {
-      return trip.passenger();
-    })
+    let pass = [];
+    let trps = this.trips();
+
+    for (trip of trps){
+      pass.push(trip.passenger());
+    }
+
+    return pass;
+    
   }
 
 }
@@ -49,7 +55,7 @@ class Passenger {
       return trip.driver();
     })
   }
-  
+
 }
 
 let tripId = 0;

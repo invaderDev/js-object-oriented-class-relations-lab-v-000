@@ -22,7 +22,7 @@ class Driver {
 
   passengers() {
     const array = this.trips();
-    array.filter(trip => {
+    return array.filter(trip => {
       return trip.passenger;
     })
   }

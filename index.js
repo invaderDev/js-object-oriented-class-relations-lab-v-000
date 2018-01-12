@@ -54,8 +54,7 @@ class Trip {
 
   passenger() {
     return store.passengers.find(passenger => {
-      if (passenger.id === this.passengerId){
-        return passenger;
+      returnpassenger.id === this.passengerId
       }
     })
   }

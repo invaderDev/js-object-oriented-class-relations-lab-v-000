@@ -19,7 +19,7 @@ class Driver {
 //FIX ME!!!!!!!!!!!!
 
   passengers() {
-    this.trips().map(trip => {
+    return this.trips().map(trip => {
       trip.passenger();
     })
   }

@@ -16,10 +16,6 @@ class Driver {
     })
   }
 
-  //this is what we're stuck on right now:
-  //idea is mostly there, just trying to figure out how to access the Array
-  //that results from calling trips() on this driver.
-
   passengers() {
     return this.trips().filter(trip => {
       return trip.passenger();
